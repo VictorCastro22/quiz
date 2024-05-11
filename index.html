@@ -12,17 +12,43 @@
     <header>
       <div class="navbar">
         <div class="logo"><a href="#">Web Dev Creative</a></div>
-          <ul>
+          <ul class="links">
             <li><a href="hero">Home</a></li>
             <li><a href="html/quiz.html">Quiz</a></li>
             <li><a href="services">História</a></li>
             <li><a href="contact">Oração</a></li>
           </ul>
-          <a href="#" class="action_btn">Get Started</a>
+          <a href="#" class="action-btn">Get Started</a>
           <div class="toggle_btn">
             <i class="fa-solid fa-bars"></i>
           </div>
       </div>
+        
+      <div class="dropdrown_menu">
+        <li><a href="hero">Home</a></li>
+        <li><a href="html/quiz.html">Quiz</a></li>
+        <li><a href="services">História</a></li>
+        <li><a href="contact">Oração</a></li>
+        <a href="#" class="action-btn">Get Started</a>
+      </div>
     </header>
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick - function() {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+
+
+        
+      }
+
+
+    </script>
+
   </body>
 </html>
