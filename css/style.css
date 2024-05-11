@@ -5,14 +5,16 @@
     font-family: 'Open Sans', sans-serif;
   }
   
-body {
+  body {
     height: 100vh;
-    background-color: black;
-    background-image: url('https://images.unsplash.com/photo-1569542993790-867e6ead1df9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
+    background-color: #0A0E0C;
+    background-image: url('https://images.unsplash.com/photo-1599752766954-57c001ba82cc?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover; /* ou ajuste manual */
     background-position: center;
-    margin-bottom: 1000px;
+    background-repeat: no-repeat;
+    /* margin-bottom: 500px; */
 }
+
 
 li {
     list-style: none;
@@ -43,9 +45,11 @@ header{
     justify-content: space-between;
 }
 
-.navbar .logo {
-    position: relative;
-    top: 45px; /* Ajuste conforme necessário */
+.navbar .logo h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Dancing Script', cursive;
 }
 
 
@@ -126,10 +130,15 @@ section#hero{
 }
 
 #hero h1{
-    margin-top: -150px;
+    margin-top: -300px;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
+#hero strong {
+    font-size: 2em; /* ou outro tamanho desejado */
+}
+
 
 @media (max-width: 992px) {
     .navbar .links,
