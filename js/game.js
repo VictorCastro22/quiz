@@ -103,8 +103,8 @@ let questions = [
   {
     question: "Quanto tempo passou desde a morte de Santo Antônio até sua canonização?",
     choice1: "6 meses",
-    choice2: "1 ano",
-    choice3: "5 anos",
+    choice2: "11 meses",
+    choice3: "2 anos",
     choice4: "10 anos",
     answer: 2
   }  
