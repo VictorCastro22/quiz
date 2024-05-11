@@ -11,44 +11,51 @@
   <body>
     <header>
       <div class="navbar">
-        <div class="logo"><a href="#">Web Dev Creative</a></div>
+        <div class="logo"><a href="#">Obra Lúmen</a></div>
           <ul class="links">
             <li><a href="hero">Home</a></li>
             <li><a href="html/quiz.html">Quiz</a></li>
             <li><a href="services">História</a></li>
             <li><a href="contact">Oração</a></li>
           </ul>
-          <a href="#" class="action-btn">Get Started</a>
+          <a href="https://lumenserfeliz.org" class="action-btn" target="_blank">Conheça a Obra Lúmen</a>
           <div class="toggle_btn">
             <i class="fa-solid fa-bars"></i>
           </div>
       </div>
         
       <div class="dropdrown_menu">
-        <li><a href="hero">Home</a></li>
+        <li><a href="hero">Equipe</a></li>
         <li><a href="html/quiz.html">Quiz</a></li>
         <li><a href="services">História</a></li>
         <li><a href="contact">Oração</a></li>
-        <a href="#" class="action-btn">Get Started</a>
+        <a href="https://lumenserfeliz.org" class="action-btn" target="_blank">Conheça a Obra Lúmen</a>
       </div>
     </header>
+
+    <main>
+      <section id="hero">
+        <h1>Bem-vindo</h1>
+        <p>
+          Somos a equipe <bold>Santo Antônio</bold> da Obra Lúmen de Maranguape<br>
+          e vamos apresentar um pouco sobre esse grande Santo a vocês!
+        </p>
+      </section>
+    </main>
 
     <script>
       const toggleBtn = document.querySelector('.toggle_btn')
       const toggleBtnIcon = document.querySelector('.toggle_btn i')
-      const dropDownMenu = document.querySelector('.dropdown_menu')
+      const dropDownMenu = document.querySelector('.dropdrown_menu')
 
-      toggleBtn.onclick - function() {
+      toggleBtn.onclick = function() {
         dropDownMenu.classList.toggle('open')
         const isOpen = dropDownMenu.classList.contains('open')
 
-
-
-        
+        toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
       }
-
-
     </script>
-
   </body>
 </html>

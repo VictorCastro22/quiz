@@ -112,6 +112,20 @@ header{
     justify-content: center;
 }
 
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
 
 @media (max-width: 992px) {
     .navbar .links,
@@ -125,5 +139,12 @@ header{
 
     .dropdrown_menu{
         display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdrown_menu{
+        left: 2rem;
+        width: unset;
     }
 }
